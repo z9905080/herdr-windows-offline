@@ -1,0 +1,7 @@
+# Windows scripts get CRLF on checkout (also in `git archive` ZIPs).
+*.ps1 text eol=crlf
+*.md text
+# Official payload and checksum files: byte-for-byte, never converted.
+# (Last, so it wins over the patterns above.)
+windows-x86_64/** -text
+SHA256SUMS -text
